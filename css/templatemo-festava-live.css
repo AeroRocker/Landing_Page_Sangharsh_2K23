@@ -48,7 +48,8 @@ h5,
 h6 {
   color: var(--white-color);
 }
-h2{
+h2,
+h7{
   color:var(--dark-color);
 }
 
@@ -57,7 +58,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7 {
   font-weight: var(--font-weight-bold);
 }
 
@@ -83,6 +85,9 @@ h5 {
 
 h6 {
   font-size: var(--h6-font-size);
+}
+h7{
+  font-size: var(--h3-font-size);
 }
 
 p {
