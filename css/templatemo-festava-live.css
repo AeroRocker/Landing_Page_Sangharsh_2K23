@@ -31,6 +31,9 @@
   --font-weight-bold:             700;
 
 }
+html{
+  background-color: #000000
+}
 
 body {
   background-color: var(--dark-color);
@@ -50,7 +53,7 @@ h6 {
 }
 h2,
 h7{
-  color:var(--dark-color);
+  color:var(--white-color);
 }
 
 h1,
@@ -95,6 +98,63 @@ p {
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
 }
+.group {
+  width: 340px;
+  height: 40px;
+  padding: 10px 40px;
+  line-height: 40px;
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  
+}
+.one {
+  float: left;
+  line-height: 40px;
+  color: white;
+  text-decoration: none;
+  transition: 1.0s;
+}
+.two {
+  float: right;
+  text-decoration: none;
+  line-height: 40px;
+  color: #a6afbf;
+}
+.bg {
+  background-color: #e67e22;
+  height: 60px;
+  width: 190px;
+  position: absolute;
+  top: 0;
+  margin-left: -260px;
+  z-index: -1;
+  transition: 1.0s;
+  border-radius: 5px;
+  
+}
+
+span:hover + .bg {
+  width: 200px;
+  margin-left: -40px;
+  background: #27ae60;
+}
+
+.two > span:hover {
+  color: white;
+}
+
+.two:hover ~ .one {
+  color:#fff;
+}
+span {
+  padding: 10px 0;
+  transition: 1.0s;
+}
+
+
 
 ul li {
   color: var(--p-color);
@@ -720,8 +780,11 @@ strong {
 /*---------------------------------------
   PRICING              
 -----------------------------------------*/
+.pricing-section{
+  background-color: #000000;
+}
 .pricing-thumb {
-  border: 5px dotted var(--dark-color);
+  border: 5px dotted var(--white-color);
   border-radius: var(--border-radius-medium);
   position: relative;
   padding: 50px;
@@ -731,6 +794,7 @@ strong {
   display: inline-block;
   font-size: var(--p-font-size);
   margin-right: 15px;
+  color: yellow;
 }
 
 .pricing-list {
@@ -740,6 +804,7 @@ strong {
 
 .pricing-list-item {
   line-height: normal;
+  color:yellow
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -751,7 +816,7 @@ strong {
   font-weight: var(--font-weight-bold);
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   width: 120px;
